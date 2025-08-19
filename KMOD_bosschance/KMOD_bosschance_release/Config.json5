@@ -1,0 +1,49 @@
+// Список доступных карт
+// { "bigmap", "Bigmap" } - Таможня
+// { "factory4_day", "Factory4Day" } - Дневной завод
+// { "factory4_night", "Factory4Night" } - Ночной завод
+// { "interchange", "Interchange" } - Развязка
+// { "laboratory", "Laboratory" } - Лаборатория
+// { "lighthouse", "Lighthouse" } - Маяк
+// { "rezervbase", "RezervBase" } - Резерв
+// { "shoreline", "Shoreline" } Берег
+// { "tarkovstreets", "TarkovStreets" } - Улицы Таркова
+// { "labyrinth", "Labyrinth" } - Лабиринт
+// { "woods", "Woods" } - Лес
+// { "sandbox", "Sandbox" } - Эпицентр
+// { "sandbox_high", "SandboxHigh" } - Ночной эпицентр
+// Где { "Имя папки", "Имя карты в коде сервера" }
+// Нужно брать второй параметр
+
+// Карт, как и боссов, может быть несколько
+{
+    "Factory4Night": 					// Имя карты, брать из списка
+	{
+        "followerBully":				// Имя босса
+		{
+			"BossChance": 100,			// Шанс его появления
+			"BossZones": "BotZone"		// Место где он появляется
+		},
+		
+		"sectantWarrior":
+		{
+			"BossChance": 100,
+			"BossZones": "BotZone"
+		}
+    },
+	
+	"Factory4Day": 
+	{
+        "followerBully":
+		{
+			"BossChance": 100,
+			"BossZones": "BotZone"
+		},
+		
+		"gifter":
+		{
+			"BossChance": 100,
+			"BossZones": ""
+		}
+    }
+}

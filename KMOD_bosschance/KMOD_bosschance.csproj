@@ -1,0 +1,30 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Library</OutputType>
+    <TargetFramework>net9.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>	
+    <RootNamespace>KMOD_bosschance</RootNamespace>
+    <Version>0.0.1</Version>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <CopyLocalLockFileAssemblies>true</CopyLocalLockFileAssemblies>
+  </PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="fastJSON5" Version="1.0.4">
+			<Private>true</Private>
+			<CopyLocal>true</CopyLocal>
+			<CopyLocalSatelliteAssemblies>true</CopyLocalSatelliteAssemblies>
+		</PackageReference>
+		<PackageReference Include="SPTarkov.Common" Version="4.0.0-pre.20250818.1738" />
+		<PackageReference Include="SPTarkov.DI" Version="4.0.0-pre.20250818.1738" />
+		<PackageReference Include="SPTarkov.Server.Core" Version="4.0.0-pre.20250818.1738" />
+	</ItemGroup>
+  
+<Target Name="CopyOutputToProjectDir" AfterTargets="Build">
+  <Copy SourceFiles="$(TargetPath)" DestinationFolder="$(ProjectDir)KMOD_bosschance_release" SkipUnchangedFiles="true" />
+  <Copy SourceFiles="$(OutputPath)fastJSON5.dll" DestinationFolder="$(ProjectDir)KMOD_bosschance_release" SkipUnchangedFiles="true" />
+</Target>
+
+</Project>
