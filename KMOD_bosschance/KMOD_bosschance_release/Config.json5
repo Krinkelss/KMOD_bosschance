@@ -11,7 +11,7 @@
 // { "labyrinth", "Labyrinth" } - Лабиринт
 // { "woods", "Woods" } - Лес
 // { "sandbox", "Sandbox" } - Эпицентр
-// { "sandbox_high", "SandboxHigh" } - Ночной эпицентр
+// { "sandbox_high", "SandboxHigh" } - Эпицентр для прокаченного персонажа
 // Где { "Имя папки", "Имя карты в коде сервера" }
 // Нужно брать второй параметр
 

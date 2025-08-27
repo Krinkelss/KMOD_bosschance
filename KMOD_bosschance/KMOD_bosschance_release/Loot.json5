@@ -1,0 +1,39 @@
+{
+	"LooseLoot":
+	{
+		"Enable": true,
+		
+		"bigmap": 5,
+		"factory4_day": 5,
+		"factory4_night": 5,
+		"interchange": 5,
+		"laboratory": 5,
+		"rezervbase": 5,
+		"shoreline": 5,
+		"woods": 5,
+		"lighthouse": 5,
+		"tarkovstreets": 5,
+		"sandbox": 5,
+		"sandbox_high": 5,
+		"labyrinth": 5
+	},
+	
+	"StaticLoot":
+	{
+		"Enable": true,
+		
+		"bigmap": 5,
+		"factory4_day": 5,
+		"factory4_night": 5,
+		"interchange": 5,
+		"laboratory": 5,
+		"rezervbase": 5,
+		"shoreline": 5,
+		"woods": 5,
+		"lighthouse": 5,
+		"tarkovstreets": 5,
+		"sandbox": 5,
+		"sandbox_high": 5,
+		"labyrinth": 5
+	}
+}
